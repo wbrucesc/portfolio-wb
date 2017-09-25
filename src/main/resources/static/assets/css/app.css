@@ -1,5 +1,5 @@
 body {
-    background-color: lightgrey;
+    background-image: url("../img/frances-gunn-57423.jpg");
 }
 
 #headshot {
@@ -10,6 +10,10 @@ body {
 #headshot img {
     width: 100%;
     height: auto;
+}
+
+#about-pic {
+    border-radius: 5px;
 }
 
 footer {
@@ -26,4 +30,9 @@ footer {
 
 .main {
     width: 63%;
+}
+
+/*contact form*/
+fieldset {
+    padding: 0px 15px 0px 0px;
 }
