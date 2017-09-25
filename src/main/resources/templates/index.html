@@ -6,6 +6,7 @@
     <title>Will Bruce</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/sandstone/bootstrap.min.css" rel="stylesheet" integrity="sha384-G3G7OsJCbOk1USkOY4RfeX1z27YaWrZ1YuaQ5tbuawed9IoreRDpWpTkZLXQfPm3" crossorigin="anonymous"/>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="/assets/css/app.css"/>
 </head>
 
 <body>
@@ -24,46 +25,66 @@
             </div>
         </nav>
 
-        <div class="container">
-            <h1>Welcome to my portfolio!</h1>
+        <div class="container well main">
+            <h1 class="text-center">Welcome to my portfolio!</h1>
 
-            <a href="https://mvc-return-to-robots-6-2.herokuapp.com/">
+            <h2 class="text-center">Recent Projects</h2>
+
+            <a href="https://mvc-return-to-robots-6-2.herokuapp.com/" title="See it in action!">
                 <h2 class="list-group-item-heading">Return to Robots</h2>
             </a>
 
                 <p>A LinkedIn style site that allows you to view different users' profiles, filter by employment status,
                     and even connect with them. This project also uses an MVC architecture.</p>
-                <ul class="list-group">
+                <ul class="list-unstyled">
                     <strong>Technologies Used:</strong>
                     <li>Node.js with Express</li>
                     <li>MongoDB</li>
                     <li>MongooseJS</li>
                 </ul>
-                <p>Completed: August 2017</p>
+            <p><em>Completed: August 2017</em></p>
 
-            <a href="https://github.com/wbrucesc/10.3-SQL-ATM-daily">
+            <hr/>
+
+            <a href="https://github.com/wbrucesc/10.3-SQL-ATM-daily" title="See the code!">
                 <h2 class="list-group-item-heading">SQL ATM</h2>
             </a>
 
                 <p>A simple ATM built with IntelliJ that allows you to withdraw and deposit amounts but won't let you overdraft!</p>
-                <ul class="list-group">
+                <ul class="list-unstyled">
                     <strong>Technologies Used:</strong>
                     <li>Java</li>
                     <li>SQL</li>
                 </ul>
-                <p>Completed: September 2017</p>
+            <p><em>Completed: September 2017</em></p>
+
+            <hr/>
+
+            <a href="https://github.com/wbrucesc/10.4-calculator" title="See the code!">
+                <h2 class="list-group-item-heading">Spring Calculator</h2>
+            </a>
+
+                <p>A basic calculator that takes two text inputs and an operator from a dropdown menu and calculates a result. </p>
+                <ul class="list-unstyled">
+                    <strong>Technologies Used:</strong>
+                    <li>Java</li>
+                    <li>Spring</li>
+                    <li>Thymeleaf</li>
+                </ul>
+            <p><em>Completed: September 2017</em></p>
         </div>
 
 
 
 <footer>
     <div class="text-center center-block">
-        <br />
+        <br/>
         <a href="https://www.linkedin.com/in/william-m-bruce-b49b9021/"><i id="social-link" class="fa fa-linkedin-square fa-3x social"></i></a>
         <a href="https://github.com/wbrucesc"><i id="social-gh" class="fa fa-github fa-3x social"></i></a>
 
         <a href="mailto:wmbruce2013@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
     </div>
+    <small class="text-center"><p>Template provided by Bootswatch</p></small>
 </footer>
 
 

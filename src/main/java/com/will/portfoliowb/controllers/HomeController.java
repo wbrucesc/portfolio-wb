@@ -16,5 +16,10 @@ public class HomeController {
         return "about";
     }
 
+    @RequestMapping("/contact")
+    public String contact() {
+        return "contact";
+    }
+
 
 }

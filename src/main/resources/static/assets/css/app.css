@@ -1,0 +1,29 @@
+body {
+    background-color: lightgrey;
+}
+
+#headshot {
+    width: 311px;
+    height: 386px;
+}
+
+#headshot img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    margin-top: 30px;
+}
+
+.bio-well {
+    width: 63%;
+}
+
+.bio {
+    font-size: 16px;
+}
+
+.main {
+    width: 63%;
+}

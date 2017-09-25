@@ -1,10 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http:www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <title>Contact</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/sandstone/bootstrap.min.css" rel="stylesheet" integrity="sha384-G3G7OsJCbOk1USkOY4RfeX1z27YaWrZ1YuaQ5tbuawed9IoreRDpWpTkZLXQfPm3" crossorigin="anonymous"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="/assets/css/app.css"/>
 </head>
 <body>
 
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Will Bruce</a>
+            </div>
+
+            <ul class="nav navbar-nav">
+                <li><a class="nav-link" href="/about">About Me</a></li>
+                <li><a class="nav-link" href="/contact">Contact</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="well well-sm">
+                    <form class="form-horizontal">
+                        <fieldset>
+                            <legend class="text-center">Contact me</legend>
+
+                            <!-- Name input-->
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="name">Name</label>
+                                <div class="col-md-9">
+                                    <input id="name" name="name" type="text" placeholder="Your name" class="form-control"/>
+                                </div>
+                            </div>
+
+                            <!-- Email input-->
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="email">Your E-mail</label>
+                                <div class="col-md-9">
+                                    <input id="email" name="email" type="text" placeholder="Your email" class="form-control"/>
+                                </div>
+                            </div>
+
+                            <!-- Message body -->
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="message">Your message</label>
+                                <div class="col-md-9">
+                                    <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
+                                </div>
+                            </div>
+
+                            <!-- Form actions -->
+                            <div class="form-group">
+                                <div class="col-md-12 text-right">
+                                    <button type="submit" class="btn btn-default">Submit</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--form provided by https://bootsnipp.com/snippets/featured/simplest-contact-form-->
+
+
+    <footer>
+        <div class="text-center center-block">
+            <br />
+            <a href="https://www.linkedin.com/in/william-m-bruce-b49b9021/"><i id="social-link" class="fa fa-linkedin-square fa-3x social"></i></a>
+            <a href="https://github.com/wbrucesc"><i id="social-gh" class="fa fa-github fa-3x social"></i></a>
+
+            <a href="mailto:wmbruce2013@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+        </div>
+        <small class="text-center"><p>Template provided by Bootswatch</p></small>
+    </footer>
 </body>
 </html>
