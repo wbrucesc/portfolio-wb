@@ -30,48 +30,18 @@
 
             <h2 class="text-center">Recent Projects</h2>
 
-            <a href="https://mvc-return-to-robots-6-2.herokuapp.com/" title="See it in action!">
-                <h2 class="list-group-item-heading">Return to Robots</h2>
-            </a>
+            <div th:each="myProject : ${myProjects}" >
+                <a th:href="${myProject.link}" title="See it in action!">
+                    <h2 class="list-group-item-heading" th:text="${myProject.title}"></h2>
+                </a>
 
-                <p>A LinkedIn style site that allows you to view different users' profiles, filter by employment status,
-                    and even connect with them. This project also uses an MVC architecture.</p>
-                <ul class="list-unstyled">
-                    <strong>Technologies Used:</strong>
-                    <li>Node.js with Express</li>
-                    <li>MongoDB</li>
-                    <li>MongooseJS</li>
-                </ul>
-            <p><em>Completed: August 2017</em></p>
+                <p th:text="${myProject.desc}"></p>
+                <span><strong>Languages Used: </strong></span>
+                <p th:text="${myProject.langs}"></p>
+                <em>Completed: <p th:text="${myProject.completed}"></p></em>
 
-            <hr/>
-
-            <a href="https://github.com/wbrucesc/10.3-SQL-ATM-daily" title="See the code!">
-                <h2 class="list-group-item-heading">SQL ATM</h2>
-            </a>
-
-                <p>A simple ATM built with IntelliJ that allows you to withdraw and deposit amounts but won't let you overdraft!</p>
-                <ul class="list-unstyled">
-                    <strong>Technologies Used:</strong>
-                    <li>Java</li>
-                    <li>SQL</li>
-                </ul>
-            <p><em>Completed: September 2017</em></p>
-
-            <hr/>
-
-            <a href="https://github.com/wbrucesc/10.4-calculator" title="See the code!">
-                <h2 class="list-group-item-heading">Spring Calculator</h2>
-            </a>
-
-                <p>A basic calculator that takes two text inputs and an operator from a dropdown menu and calculates a result. </p>
-                <ul class="list-unstyled">
-                    <strong>Technologies Used:</strong>
-                    <li>Java</li>
-                    <li>Spring</li>
-                    <li>Thymeleaf</li>
-                </ul>
-            <p><em>Completed: September 2017</em></p>
+                <hr/>
+            </div>
         </div>
 
 
