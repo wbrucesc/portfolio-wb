@@ -28,8 +28,10 @@ footer {
     font-size: 16px;
 }
 
-.main {
-    width: 63%;
+
+#title {
+    font-size: 14px;
+    color: #3F403B;
 }
 
 /*contact form*/

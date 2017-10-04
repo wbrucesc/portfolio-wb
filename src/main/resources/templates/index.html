@@ -25,23 +25,45 @@
             </div>
         </nav>
 
-        <div class="container well main">
-            <h1 class="text-center">Welcome to my portfolio  </h1>
-
-            <h2 class="text-center">Recent Projects</h2>
-
-            <div th:each="myProject : ${myProjects}" >
-                <a th:href="${myProject.link}" title="See it in action!">
-                    <h2 class="list-group-item-heading" th:text="${myProject.title}"></h2>
-                </a>
-
-                <p th:text="${myProject.desc}"></p>
-                <span><strong>Languages Used: </strong></span>
-                <p th:text="${myProject.langs}"></p>
-                <em>Completed: <p th:text="${myProject.completed}"></p></em>
-
-                <hr/>
+        <div class="container">
+            <div class="container well">
+                <h1 class="text-center">Welcome to my portfolio</h1>
+                <h2 class="text-center">Recent Projects</h2>
             </div>
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4" th:each="project : ${myProjects}">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <a th:href="${project.link}" title="See it in action!"><h3 id="title" class="panel-title" th:text="${project.title}" ></h3></a>
+                            </div>
+                            <div class="panel-body">
+                                <div th:text="${project.desc}"></div>
+                                <hr/>
+                                <div><strong>Languages Used:</strong></div>
+                                <div th:text="${project.langs}"></div>
+                                <hr/>
+                                <strong><div th:text="'Completed: ' + ${project.completed}"></div></strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--<div th:each="myProject : ${myProjects}" >-->
+                <!--<a th:href="${myProject.link}" title="See it in action!">-->
+                    <!--<h2 class="list-group-item-heading" th:text="${myProject.title}"></h2>-->
+                <!--</a>-->
+
+                <!--<p th:text="${myProject.desc}"></p>-->
+                <!--<span><strong>Languages Used: </strong></span>-->
+                <!--<p th:text="${myProject.langs}"></p>-->
+                <!--<em>Completed: <p th:text="${myProject.completed}"></p></em>-->
+
+                <!--<hr/>-->
+            <!--</div>-->
         </div>
 
 
