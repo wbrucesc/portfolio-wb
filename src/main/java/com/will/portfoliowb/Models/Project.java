@@ -10,7 +10,7 @@ public class Project {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String title;
-    private String desc;
+    private String description;
     private String langs;
     private String link;
     private String completed;
@@ -31,12 +31,12 @@ public class Project {
         this.title = title;
     }
 
-    public String getDesc() {
-        return desc;
+    public String getDescription() {
+        return description;
     }
 
-    public void setDesc(String desc) {
-        this.desc = desc;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public String getLangs() {
@@ -68,7 +68,7 @@ public class Project {
         return "Project{" +
                 "id=" + id +
                 ", title='" + title + '\'' +
-                ", desc='" + desc + '\'' +
+                ", description='" + description + '\'' +
                 ", langs='" + langs + '\'' +
                 ", link='" + link + '\'' +
                 ", completed='" + completed + '\'' +
