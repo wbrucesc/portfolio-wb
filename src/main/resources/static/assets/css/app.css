@@ -1,19 +1,17 @@
 body {
-    background-image: url("../img/frances-gunn-57423.jpg");
+    background: url("../img/frances-gunn-57423.jpg") no-repeat;
+    background-size: cover;
+    font-family: 'Fira Mono', monospace;
 }
 
-#headshot {
-    width: 340px;
-    height: 330px;
+.main {
+    background-color: #3E3F3B;
+    color: #fff;
+    font-family: 'Merriweather', serif;
 }
 
-#headshot img {
-    width: 100%;
-    height: auto;
-}
-
-#about-pic {
-    border-radius: 5px;
+.project {
+    min-height: 350px;
 }
 
 footer {
@@ -26,6 +24,11 @@ footer {
 
 .bio {
     font-size: 16px;
+    color: #fff;
+}
+
+.bio-title {
+    color: #fff;
 }
 
 
@@ -37,4 +40,30 @@ footer {
 /*contact form*/
 fieldset {
     padding: 0px 15px 0px 0px;
+}
+
+.about-section {
+    margin: 50px auto;
+    background-color: #3E3F3B;
+}
+
+#headshot {
+    width: 340px;
+    height: 330px;
+}
+
+#headshot img {
+    width: 100%;
+    height: auto;
+
+}
+
+#about-pic {
+    border-radius: 5px;
+}
+
+.contact-section {
+    background-color: #3E3F3B;
+    color: #fff;
+    font-size: 16px;
 }

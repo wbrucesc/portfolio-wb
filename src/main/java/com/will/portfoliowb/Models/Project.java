@@ -13,6 +13,7 @@ public class Project {
     private String description;
     private String langs;
     private String link;
+    private String github;
     private String completed;
 
     public long getId() {
@@ -61,6 +62,14 @@ public class Project {
 
     public void setCompleted(String completed) {
         this.completed = completed;
+    }
+
+    public String getGithub() {
+        return github;
+    }
+
+    public void setGithub(String github) {
+        this.github = github;
     }
 
     @Override
